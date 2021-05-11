@@ -4,7 +4,10 @@ describe('palindromes', function() {
   it('works with single words', function() {
     expect(palindromes('racecar')).toEqual(true);
   });
-  xit('works with punctuation', function() {
+  xit('works with punctuation ', function() {
+    expect(palindromes('racecar!')).toEqual(true);
+  });
+  xit('works with upper-case letters ', function() {
     expect(palindromes('Racecar!')).toEqual(true);
   });
   xit('works with multiple words', function() {
@@ -16,5 +19,4 @@ describe('palindromes', function() {
   xit('doesn\'t just always return true', function() {
     expect(palindromes('ZZZZ car, a man, a maraca.')).toEqual(false);
   });
-
 });
